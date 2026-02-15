@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="https://kit.fontawesome.com/c758554bf7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1> 🎬 Movie Explorer</h1>
+    <button id="themeToggle"><i class="fa-regular fa-moon"></i></button>
+  </header>
+
+  <main>
+    <section class="search-area">
+      <input type="text" id="searchInput" placeholder="Search movies (e.g. Inception)" />
+      <button id="searchBtn" type="button">Search</button>
+      <p id="statusMessage"></p>
+    </section>
+
+    <section id="results">
+      <h2>Search Results</h2>
+      <div id="movieGrid" class="grid"></div>
+    </section>
+
+    <section id="watchlist-section">
+      <h2>My Watchlist (this session only)</h2>
+      <div id="watchlistGrid" class="grid"></div>
+      <p id="watchlistEmpty">Your watchlist is empty.</p>
+    </section>
+  </main>
+  <div id="movieModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
